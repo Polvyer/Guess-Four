@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#FF0000"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_width="0dp">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Worker Thread 1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secret Number "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/SecretNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="----"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:visibility="visible" />
+
+        <ListView
+            android:id="@+id/ListView1"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#0000FF"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_width="0dp">
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Worker Thread 2"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secret Number "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/SecretNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="----"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:visibility="visible" />
+
+        <ListView
+            android:id="@+id/ListView2"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
